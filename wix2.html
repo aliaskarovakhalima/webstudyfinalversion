@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2.0 The main page of the site</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+    <img src="logo.png" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="student.html">Student</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>WIX Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix1.html">1.SiteMap</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="wix2.html">2.1The main page of the site(Using the Editor Tools)</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="wix2.1.html">2.2The main page of the site(Header)</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix3.html">3.Content</a>
+   <a class="w3-bar-item w3-button w3-hover-black" href="wix4.html">4.1.Multimedia (Text and Image,Lines)</a>
+   <a class="w3-bar-item w3-button w3-hover-black" href="wix4.2.html">4.2.Multimedia (Buttons and Gallery)</a>
+   <a class="w3-bar-item w3-button w3-hover-black" href="footer.html">Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix5.html">5.Website publication</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix6.html">6.Website promotion</a>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="head">The most important tasks of the site creator</h1>
+      <ul>
+      <li>Able to interest the user;</li>
+      <li>Choose the right site design according to the purpose;</li>
+      <li>Simple and easy to use.</li>
+    </ul>
+      <h3>There are two main sitemap formats:</h3>
+    </div>
+
+
+    <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-16">To register on Wix.com:</li>
+        <li class="w3-padding-16">On the wix.com page, click the Log in button, and in the window that opens, select Create an account.</li>
+        <li class="w3-padding-8">The user enters a valid e-mail address and any password.</li>
+        <li class="w3-padding-8">Click the Create button.</li>
+      </ul>
+    </div>
+
+
+
+<div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-16">Start creating a site:</li>
+        <li class="w3-padding-8">Determining the topic of the site</li>
+        <li class="w3-padding-8">Defining the site audience</li>
+        <li class="w3-padding-8">Define site style</li>
+        <li class="w3-padding-8">Creating a site layout</li>
+      </ul>
+
+  </div>
+
+
+
+<div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-16">Choose a site template:</li>
+        <li class="w3-padding-64">Wix site builder offers 500 types of templates. All elements in the template are corrected and reconfigured. You can change the position of the elements in it and change the design.</li>
+        
+      </ul>
+    </div>
+
+
+
+<div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-16">Site decoration:</li>
+        <li class="w3-padding-8">Work with site pages.</li>
+        <li class="w3-padding-8">Work with design</li>
+        <li class="w3-padding-8">Using the control panel</li>
+        <li class="w3-padding-8">Edit the image</li>
+        <li class="w3-padding-8">Add text</li>
+      </ul>
+
+  </div>
+
+
+
+</div>
+
+<h1 class="wds_1_31_0_Heading__root wds_1_31_0_Heading---appearance-2-H1 wds_1_31_0_Heading--newColorsBranding ArticleHeader_articleTitle__Hf_Ob" data-appearance="H1" data-size="extraLarge" data-light="false" data-mask="false"> Using the Editor Menus</h1>
+<div class="wix-custom-style"><div class="aul article-viewer ltr" lang="en"><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>The Wix Editor is the platform you use to build your website. It is packed full of features to help you create a professional, functional website. There are 3 main menus inside the Editor, which allow you to perform a number of different actions to build and manage your site.</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div><strong>In this article, learn more about:</strong></div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+  <li>The left menu</a></li>  <li>The top bar menu</a></li>  <li>The right-click menu</a></li>  <li>Hiding and showing the Editor menus</a></li></ul></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="331021f5-7063-48ec-978c-72622bc03f6b" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/08/18/64b07c44-9443-4403-8601-ab850184a5c2/c040874b-b126-4733-a998-c3e9ca857afd.png" alt="The Wix Editor. The three menus are highlighted on the page."></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="the-left-menu">The left menu</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>The menu on the left side of the Editor contains all the features you need to build your site. Add elements and apps, and manage your pages.</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>The features available in the left menu are:</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+  <li><strong>Add Elements&nbsp;</strong><img data-composite="true" src="https://lh3.googleusercontent.com/7LLyJDpb1YNka1ZhbzgTb9_SdSee82_uMqmWsSmvwFzTMxjOf7TR74QeJT6ypHoU4aSN9MubGdlkQtyajgd3uTKO0AVhE_6Qwutstfxaug6dn5FP6v95ZR01-7jD9f1FQYCf7Hcqx9Av8BBSN9hJEw" aria-hidden="true"><strong>:</strong> In this panel you will find tons of elements to add to your site. Use the tabs to navigate between the types of elements.</li>  <li><strong>Add Section </strong><img data-composite="true" src="https://lh3.googleusercontent.com/rvlXOLNqQqqoT-uLkpoTCSRkD5Wv6X6jpN09Tb9ec06nYdUnI65wo1fWHaNeiAmMQQPL0lNK9Y4IKF2p6eit_Ux8wVo4sVadJ79eoZVaPNgTbVTrW21wdmlkX5y0PrZdf4vgTz0CwwqvNOpW_9dE0g" aria-hidden="true"><strong>:</strong> Use this panel to add sections to your pages. There are a variety of pre-made designs available, or you can add a blank section to start from scratch.</li>  <li><strong>Menus &amp; Pages&nbsp;</strong><img data-composite="true" src="https://lh4.googleusercontent.com/78oSgFeIMp5aI1p-pjbs4Qas3jboaOudOvC7kH9B8r0ulkBbhu1KY6_JAuMJfsfkXmoN64979lHbPcNM5psjZPHslubRTrl2gyrI_fI_wm2HxgwlZbGvpggATt3Yg1su53pkKti8" aria-hidden="true"><strong>:</strong> From here you can add, delete and manage your site's pages.</li>  <li><strong>Site Design&nbsp;</strong><img data-composite="true" src="https://lh5.googleusercontent.com/hON2pEm6W2EFpvWed-RlvI5NwQ6ZFEaECQA7V0nVrw86YZfkHsR5tiyR8L9t7ZogDGxKWYd_MUtoHwepHQIImVOkMP9pKJVFx1Pqhz7IoeNO_O0oKeynA8d81SPg8YuHPB3-oBzh" aria-hidden="true"><strong>: </strong>Manage your site's colors, text themes, page backgrounds and transitions.&nbsp;</li>  <li><strong>Add Apps&nbsp;</strong><img data-composite="true" src="https://lh6.googleusercontent.com/YvvAKfry2grbixCT7g0OKborr-wgOzNjeddn3vMuVTvK1RJocF-7_i-pB7aN-sQiUscVnBO_iCkBc1egtLj4sNQF_TFKMqtmwmdF2m_FYK2l879vKApwcmXuBTYsR8S0whOnNzN3" aria-hidden="true"><strong>:</strong> Browse hundreds of apps in the Wix App Market and find the ones that suit your needs.</li>  <li><strong>Media&nbsp;</strong><img data-composite="true" src="https://lh4.googleusercontent.com/BXNb33YHdV1YVOl6x53HWxYlbCJjbQYPUNQhfeBRMZ3pbrDcFMXRtiGg_fi4nL40hqEfSQdWNag99l1MKxbPQaelz8jR59OMPmorRRF9Xapk6K__y-zhuAOjPcc_wS6W_fy44aeY" aria-hidden="true"><strong>:</strong> Add media files to your Media Manager or purchase professional images and videos to use on your site.</li></ul></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="f05f1f96-e75e-47b1-998f-dc164d02ae03" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/08/18/72d29006-e666-48c6-9795-6908d8c117ca/420b76dc-75f1-4d92-b63b-3afadaf03619.png" alt="The left menu in the Wix Editor."></div></div><div class="component informative-component ltr" data-component-type="informative"><div class="informative-content" data-color="blue"><span class="informative-title"><strong>Note:</strong></span><span class="rendered-html"><div>Additional icons are added to the left menu depending on the template you choose and when you add certain features such as Wix Stores, Wix Bookings or Velo by Wix.</div></span></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="the-top-bar-menu">The top bar menu</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>The menu bar at the top of the Editor contains several tools and settings.&nbsp;</div></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="e13855fb-3692-41d6-add5-09484413562c" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/01/19/7b369c70-9f29-421f-8a1a-57d2dc1eb9fb/790ca428-a482-4b51-bdb1-044962f6597b.png" alt="A close up image of the Editor top bar menu."></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>From left to right:</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+  <li><strong>Page drop-down: </strong>Navigate between your site's pages for editing.</li>  <li><strong>Desktop and Mobile Editors:</strong> Switch between the desktop and mobile Editors.</li>  <li><strong>Site:</strong> Save, preview and publish your site, get feedback or review your site history.&nbsp;</li>  <li><strong>Settings:</strong> Connect a domain, change your site's settings, set up a multilingual site and more.</li>  <li><strong>Dev Mode:</strong> Enable Velo to start using Velo by Wix.&nbsp;</li>  <li><strong>Hire a Professional:</strong> Get help building your Wix site from a professional.</li>  <li><strong>Help: </strong>Get immediate help inside the Editor. Click <strong>Editor Help Center </strong>to access thousands of help articles.</li>  <li><strong>Upgrade:</strong> Upgrade your site with a Premium plan.</li>  <li><strong>Undo: </strong>Undo your last action (Ctrl + Z)</li>  <li><strong>Redo:</strong> Redo your last action (Ctrl + Y)</li>  <li><strong>Zoom Out:</strong> Manage and reorder your page content.</li>  <li><strong>Tools: </strong>Show or hide the Editor Toolbar, Rulers, Gridlines and Snap to Object features.</li>  <li><strong>Search:</strong> Search the Editor for elements, apps, and help.</li>  <li><strong>Save: </strong>Save your most recent changes.</li>  <li><strong>Preview: </strong>Preview your site.</li>  <li><strong>Publish: </strong>Publish your site and/or most recent changes.</li></ul></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="the-right-click-menu">The right-click menu</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Right-click any element (on Mac press <strong>control </strong>and click) to open the right-click menu. Here you'll find options and actions that vary depending on the element you click. .</div></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="327970aa-14bb-4b5e-8421-e1bf45875d3e" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8696077d-830a-4b1e-bd86-9df98f89994a/2021/07/18/05ec829b-97d7-458c-bc77-a76dfb7f05fa/df0af7f8-7ed6-4de8-9c14-b78892381a02.png" alt=""></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="hiding-and-showing-the-editor-menus">Hiding and showing the Editor menus</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>If you want more space to work with in your Editor, you can hide the controls, menus, and tools. Hiding these features doesn't affect your element editing options, so you can continue to customize their content and design as needed.</div></div></div><div class="component heading-component" data-component-type="heading"><h4 class="heading-text" id="">To hide / show menus and tools in the Editor:</h4></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+  <li>Click the <strong>Hide Controls</strong> arrow <img data-composite="true" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/09/26/1a0edf2a-3639-4650-98ae-0b702aa228b7/bfc9f573-49b2-4b7f-9954-e425c4d67bb0.png" aria-hidden="true">&nbsp;at the top of the Editor.</li>  <li>Click the arrow again to return to the normal Editor view.</li></ul></div></div></div></div></div>
+
+  <h1 class="wds_1_31_0_Heading__root wds_1_31_0_Heading---appearance-2-H1 wds_1_31_0_Heading--newColorsBranding ArticleHeader_articleTitle__Hf_Ob" data-appearance="H1" data-size="extraLarge" data-light="false" data-mask="false">Wix Editor: Using the Editor Tools</h1>
+    <div class="wix-custom-style"><div class="aul article-viewer ltr" lang="en"><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>The Wix Editor offers several built-in tools to make your design process faster and more precise. You can find these features in the Tools panel at the top right of the Editor.</div></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="6e7b94b1-4a7f-46a4-802b-9d072cf32b2d" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/08/18/bc91bfdf-1618-4cbe-96d1-8e13bdbfa15d/b41596af-41ed-485c-a6a4-19ed76a7ab56.png" alt="A close up screenshot showing the tools panel in the Wix Editor."></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div><strong>In this article, learn how to use the:</strong></div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-using-the-editor-tools#using-the-editor-toolbar" target="">Editor Toolbar</a></li>  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-using-the-editor-tools#using-the-layers-panel" target="">Layers Panel</a></li>  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-using-the-editor-tools#using-the-horizontal-and-vertical-rulers" target="">Rulers</a></li>  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-using-the-editor-tools#using-gridlines" target="">Gridlines</a></li>  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-using-the-editor-tools#using-the-snap-to-objects-tool" target="">Snap to Objects</a></li></ul></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="using-the-editor-toolbar">Using the Editor Toolbar</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>The Editor Toolbar helps you perform basic actions quickly. Use it to copy, paste, duplicate or delete elements on your page. You can also adjust element settings such as <a data-composite="true" href="https://support.wix.com/en/article/wix-editor-using-the-editor-toolbar-to-adjust-elements" target="">size, position and alignment</a>.&nbsp;</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>After enabling the Toolbar from the Tools panel, you'll find it on the right side of the Editor.</div></div></div><div class="component heading-component" data-component-type="heading"><h4 class="heading-text" id="">To enable the Toolbar:</h4></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ol start="1">
+  <li>Click <strong>Tools</strong> <img data-composite="true" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8696077d-830a-4b1e-bd86-9df98f89994a/2021/07/18/d18a9106-362a-4f24-b845-9669b8186d76/b07cec18-72ed-4684-9592-fa7e5d40e7ac.png" aria-hidden="true">&nbsp;on the top right of the Editor.</li>  <li>Select the <strong>Toolbar </strong>checkbox.</li></ol></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="eb91a271-3daf-4efa-b4f0-7672de20bddd" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/08/18/f6516e8f-7caf-4a6e-922a-b4ebde48ada3/15aad3b6-2e39-4a39-b314-0f458e1be4fa.png" alt="The tools panel in the Editor. The toolbar check box has been selected, and the toolbar itself is highlighted."></div></div><div class="component informative-component ltr" data-component-type="informative"><div class="informative-content" data-color="green"><span class="informative-title"><strong>Tips:</strong></span><span class="rendered-html"><ul>
+  <li>Re-position the Editor Toolbar to your convenience by dragging and dropping it anywhere on your page.</li>  <li>You can hide / show the Toolbar and Editor menus (such as the left and top menus) by clicking the Hide Controls arrow <img data-composite="true" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/09/26/85f6dec6-6d0e-4257-9d47-a9f4ba713a02/1e212f88-de4c-4442-8d9b-d63c60bd89ed.png">&nbsp;at the top of the Editor. </li></ul></span></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="using-the-layers-panel">Using the Layers panel</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>The Layers panel shows you all of the elements on your page. The panel is divided by the main parts of your page (header, page and footer) so you can easily find the elements you need.</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>After enabling the Layers panel, it appears as a floating panel you can drag anywhere inside the Editor.&nbsp;You can enable it by clicking the Layers icon <img data-composite="true" src="https://lh6.googleusercontent.com/08X6KfjRvHvKhfWoe-Jge7PIk3KiCH1I3JEjhsdNuIcK_rfp5jV_RQ1DtusGPrCiIdLHPA6N8bjW0vtjQ1Ngjf8pME63ysDjafiBDI3NSrurVFtzeWq7d7DWH0D77XSiJZRD9HyRsyz7Gl2NzMDWJw" aria-hidden="true"> at the bottom left of the Editor.</div></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="e5d9b242-29bd-4bb3-8df6-0d23b913f5c8" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/08/18/dc9d9a4f-8bef-4da0-95bc-97dac932e298/98f02762-b7d8-498e-933e-93d726ed9b60.png" alt="The layers panel in the Editor. The icon has been highlighted."></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="using-the-horizontal-and-vertical-rulers">Using the horizontal and vertical rulers</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Using the horizontal and vertical rulers, you can accurately place elements on your site. Position your elements in specific locations (in pixels) and add guides to help you mark these spots.&nbsp;</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>After enabling Rulers from the Tools panel, you can see the horizontal ruler along the top and the vertical ruler on the right side.&nbsp;</div></div></div><div class="component heading-component" data-component-type="heading"><h4 class="heading-text" id="">To enable the rulers:</h4></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ol start="1">
+  <li>Click <strong>Tools</strong> <img data-composite="true" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8696077d-830a-4b1e-bd86-9df98f89994a/2021/07/18/d18a9106-362a-4f24-b845-9669b8186d76/b07cec18-72ed-4684-9592-fa7e5d40e7ac.png" aria-hidden="true">&nbsp;on the top right of the Editor.</li>  <li>Select the <strong>Rulers </strong>checkbox.</li></ol></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="c25cb848-3494-4f94-9be5-50d96d24b0a7" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/08/18/681a28c1-064d-4a36-a26d-87d2151c63cb/54f1a181-64f5-46f5-9800-7dc8015450f9.png" alt="The tools panel. The Rulers box has been selected, and the rulers are highlighted."></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="using-gridlines">Using gridlines</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Gridlines are the dotted lines inside your Editor that can help you build your site's layout correctly. The vertical gridlines are especially useful, as they show your page's maximum width on tablets and smaller devices.&nbsp;</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Use the gridlines to ensure your content is visible on every possible screen size. Depending on your needs, you can enable and disable them at any point.&nbsp;</div></div></div><div class="component heading-component" data-component-type="heading"><h4 class="heading-text" id="">To enable gridlines:</h4></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ol start="1">
+  <li>Click <strong>Tools</strong> <img data-composite="true" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8696077d-830a-4b1e-bd86-9df98f89994a/2021/07/18/d18a9106-362a-4f24-b845-9669b8186d76/b07cec18-72ed-4684-9592-fa7e5d40e7ac.png" aria-hidden="true">&nbsp;on the top right of the Editor.</li>  <li>Select the <strong>Gridlines </strong>checkbox.</li></ol></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="d097b103-31df-4f3e-89e4-9558f7e22812" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/651c25b0-2d60-43c8-addf-1df2fd575568/2022/08/18/13161efc-02f9-4b4e-a97d-82617e1fdc8c/bb428759-2ac1-47ad-82a3-2558c8b6be30.png" alt="The gridlines in the Wix Editor. The lines are highlighted."></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="using-the-snap-to-objects-tool">Using the Snap to Objects tool</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>The Snap to Objects tool helps you attach elements to one another with complete accuracy.&nbsp;</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Once you drag an element, purple lines appear in order to mark the borders of other elements on that page. When you decide to drop the element you're dragging, it "snaps" to these markers within a 5 pixel range.</div></div></div><div class="component heading-component" data-component-type="heading"><h4 class="heading-text" id="">To enable Snap to Objects:</h4></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ol start="1">
+  <li>Click <strong>Tools</strong> <img data-composite="true" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8696077d-830a-4b1e-bd86-9df98f89994a/2021/07/18/d18a9106-362a-4f24-b845-9669b8186d76/b07cec18-72ed-4684-9592-fa7e5d40e7ac.png" aria-hidden="true">&nbsp;on the top right of the Editor.</li>  <li>Select the <strong>Snap to Objects </strong>checkbox.</li></ol></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="69293cdf-970c-4975-ad11-46ce797f157f" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8696077d-830a-4b1e-bd86-9df98f89994a/2021/08/04/8d845986-5b90-418e-a519-3e8e0ec8324d/63e2e655-63c1-47c8-b781-d51480aa55ec.gif" alt="A GIF showing the snap to objects tool being used in the Editor."></div></div></div></div>
+ 
+
+<button onclick="hideShow()" class="w3-btn w3-margin-bottom">Task</button>
+     
+        <div id="main" class="main">
+          2. Creating WIX web sites <br>
+          Task 1.Thoroughly familiarize yourself with the tools of the Wicks website <br>
+          Task 2. Divide into groups and use additional sources of information to analyze the following site builders and compare their advantages and disadvantages.<br>
+          <img class="piccont" src="img/wiix.png" alt=""> 
+        
+          
+          </div>
+          <a target="_blank" href="https://quizizz.com/join?gc=79279858" class="w3-btn w3-margin-bottom">Check yourself</a>
+        </div>
+      </div>
+      
+       
+      </div>
+  </div>
+
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div> -->
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+  if(display==1)
+  {
+    div.style.display='block';
+    display=0;
+  }
+  else
+  {
+    div.style.display='none';
+    display=1;
+  }
+}
+</script>
+
+
+  </div>
+
+
+
+
+  
+  
+
+  </div>
+
+
+ 
+
+ 
+<!-- END MAIN -->
+</div>
+
+
+
+
+
+  
+  
+  <style>
+    .navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+
+
+}
+.logo{
+  width: 200px;
+  cursor: pointer;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+    margin-right: 40px;
+}
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 20px;
+}
+
+.piccont{
+    width: 50%;
+    margin-top: 50px;
+}
+.img{
+  width: 40%;
+  margin-top: 10px;
+  border: 4px solid #616161;
+}
+hr{
+  color: black;
+}
+.spes_tagname {
+    color: brown;
+}
+table.w3-table-all, table.ws-table-all {
+    margin: 20px 0;
+}
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+}
+.w3-white, .w3-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important;
+}
+.ws-table-all td, .ws-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.ws-table-all tr:nth-child(odd) {
+    background-color: #fff;
+}
+.ws-table-all tr {
+    border-bottom: 1px solid #ddd;
+}
+.ws-table-all th:first-child, .ws-table-all td:first-child {
+    padding-left: 16px;
+}
+.ws-table-all tr:nth-child(even) {
+    background-color: #E7E9EB;
+}
+.w3-btn, .w3-btn:link, .w3-btn:visited {
+    color: #FFFFFF;
+    background-color: #f44336;
+    margin-top: 10px;
+}
+.w3-example .w3-btn, .w3-example .ws-btn {
+    background-color: #7f22f8!important;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 6px 18px;
+}
+p {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    font-size: 17px;
+}
+h1{
+  color: w3-light-grey;
+}
+
+.w3-example {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    margin-top: 24px;
+    margin-right: -20px;
+    margin-bottom: 24px;
+    margin-left: -20px;
+    box-shadow: none!important;
+    background-color: #E7E9EB;
+    border-radius: 5px;
+    padding: 0.01em 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+ #main{
+  display: none;
+}
+
+  </style>
+  
+
+
+    
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Content</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+    <img src="logo.png" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="student.html">Student</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>WIX Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix1.html">1.SiteMap</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="wix2.html">2.1The main page of the site(Using the Editor Tools)</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="wix2.1.html">2.2The main page of the site(Header)</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="wix3.html">3.Content</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix4.html">4.1.Multimedia (Text and Image,Lines)</a>
+   <a class="w3-bar-item w3-button w3-hover-black" href="wix4.2.html">4.2.Multimedia (Buttons and Gallery)</a>
+   <a class="w3-bar-item w3-button w3-hover-black" href="footer.html">Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix5.html">5.Website publication</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix6.html">6.Website promotion</a>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-container" id="packages" style="margin-top:80px">
+    <h1 class="wds_1_31_0_Heading__root wds_1_31_0_Heading---appearance-2-H1 wds_1_31_0_Heading--newColorsBranding ArticleHeader_articleTitle__Hf_Ob" data-appearance="H1" data-size="extraLarge" data-light="false" data-mask="false">Wix Editor: Saving, Previewing and Publishing Your Site</h1>
+    <div class="wix-custom-style"><div class="aul article-viewer ltr" lang="en"><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Manage your site from within the Editor to keep it updated, and to keep any new changes that you've made. You can save, preview, and publish your site from the Editor at any time.&nbsp;</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div><strong>In this article, learn how to:</strong></div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-save-preview-and-publish-your-site#saving-your-site" target="">Save your site</a></li>  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-save-preview-and-publish-your-site#previewing-your-site" target="">Preview your site</a></li>  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-save-preview-and-publish-your-site#publishing-your-site" target="">Publish your site</a></li>  <li><a data-composite="true" href="https://support.wix.com/en/article/wix-editor-save-preview-and-publish-your-site#faqs" target="">Frequently asked questions (FAQs)</a></li></ul></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="saving-your-site">Saving your site</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Your site is automatically saved regularly as you are working in the Editor. It starts after the first manual save on your site.&nbsp; &nbsp;</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Even with autosave, we still recommend that you save your site regularly as you are building it, to avoid losing any changes.&nbsp;</div></div></div><div class="component heading-component" data-component-type="heading"><h4 class="heading-text" id="">To save your site:</h4></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ol start="1">
+  <li>Click <strong>Save</strong> at the top right of the Editor.</li>  <li>Click <strong>Done</strong> in the pop-up window.</li></ol></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="9ce6e4b8-8a56-46db-bfc4-3a3a1ea0c682" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/9432a2ad-f01d-4a3d-ae53-370c37e15e62/2022/11/14/9c0c13be-03fa-433f-b9de-a49db4ab3b08/f86a5549-0b9a-48ad-8602-312a85555b2c.jpg" alt=""></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="previewing-your-site">Previewing your site</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>You can preview your site without publishing it to see what it looks like to visitors. This is a great way to test how new changes and updates look before publishing them.&nbsp;</div></div></div><div class="component heading-component" data-component-type="heading"><h4 class="heading-text" id="">To preview your site:</h4></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ol start="1">
+  <li>Click&nbsp;<strong>Preview</strong>&nbsp;at the top right of the Editor.</li>  <li>Browse your site preview.</li>  <li>Click&nbsp;<strong>Back to Editor</strong>&nbsp;to go back to the Editor.</li></ol></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="31264a7c-8302-45f9-bb82-ee3876d26e8e" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/9432a2ad-f01d-4a3d-ae53-370c37e15e62/2022/11/14/8ec46a7f-0da8-4947-aa2c-302130e08aa9/b0aaa6fa-bcc7-41f1-9bdb-4d7d4c4bd0bd.jpg" alt=""></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="publishing-your-site">Publishing your site</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>You need to publish your site for the changes to be made live on the Internet. You can publish new changes to your site at any time by clicking&nbsp;<strong>Publish&nbsp;</strong>at the top right of the Editor.&nbsp;</div></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="171346f0-e003-4ac3-af34-4cb1c069bc58" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/9432a2ad-f01d-4a3d-ae53-370c37e15e62/2022/11/14/686755c7-e66b-4275-9ebe-a135b604631b/97e58c00-3374-454b-8054-34ade20b986a.jpg" alt=""></div></div>
+
+  <h1 class="wds_1_31_0_Heading__root wds_1_31_0_Heading---appearance-2-H1 wds_1_31_0_Heading--newColorsBranding ArticleHeader_articleTitle__Hf_Ob" data-appearance="H1" data-size="extraLarge" data-light="false" data-mask="false">About Domains</h1>
+  <div class="wix-custom-style"><div class="aul article-viewer ltr" lang="en"><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>For a site to be published online, it needs to have a web address. A domain name</a> is part of the unique, virtual address of a website, e.g.www.mystunningwebsite.com</a>.</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>A <strong>domain name</strong> is made up of:</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+  <li>A <strong>site name</strong> (for example, 'mystunningwebsite')</li>  <li>A <strong>domain extension</strong> (for example, .com, .ie, .org<strong> </strong>etc.)</li></ul></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Together these parts make up the domain name 'mystunningwebsite.com'.</div></div></div><div class="component image-component" data-component-type="image"><div class="image-container"><img tabindex="0" id="ed8bc62a-ec03-4bcf-b83c-1b6b68eb7da7" class="clickable" src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8bfd4238-b80c-4a51-9f46-b907c2acff01/2022/10/10/574dd1d3-cafa-4f48-a344-59c1c8664259/56808dde-6ce9-4776-915c-411facc1e0e4.png" alt="image of site name and domain extension parts of URL"></div></div><div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="personalize-your-free-wix-url">Personalize your free Wix URL</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>When you publish your site for the first time, your web address (i.e., URL) is in the following format: <strong>accountname.wixsite.com/siteaddress</strong>.&nbsp;</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>To make this more personalized, you can edit the free Wix URL</a>:</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+  <li><strong>Account name:&nbsp;</strong>This is the account name of your Wix account. You can edit your account name in your Account Settings.</li>  <li><strong>Site name:</strong>&nbsp;You enter your site name when saving your site for the first time. You can edit it in your site dashboard.</li></ul></div></div><div class="component informative-component ltr" data-component-type="informative"><div class="informative-content" data-color="orange"><span class="informative-title"><strong>Important:</strong></span><span class="rendered-html"><div>This will not remove the 'wixsite.com/siteaddress' part of the URL. You need to have a Premium plan</a> before you can connect a custom domain</a> to your site.</div></span></div></div>
+
+ <img class="images" src="img/domaim1.png" alt="">
+
+  <div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="purchase-a-custom-domain-from-wix">Purchase a custom domain from Wix</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Purchase a unique domain name</a> for your brand and business directly from Wix. This gives your site a more professional look and can make it easier to find. It can help build trust with customers and strengthen brand awareness.</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Having a custom domain name also improves your SEO, which helps you get better placement in search engine results.</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Another benefit of having your own domain is the ability to create your own business emails</a> (e.g. mail@mystunningwebsite.com) and subdomains</a> as well (e.g. blog.mystunningwebsite.com).</div></div></div>
+
+<img class="images" src="img/domain2.png" alt="">
+
+  <div class="component line-component" data-component-type="line"><hr class="thin-style"></div><div class="component heading-component" data-component-type="heading"><h3 class="heading-text" id="connect-a-domain-you-own-to-your-wix-site">Connect a domain you own to your Wix site</h3></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><div>Wix makes it easy for you to transfer a domain you already own between your Wix sites, or from another host into your Wix account:</div></div></div><div class="component text-component" data-component-type="text"><div class="inner-text-component-html"><ul>
+   <li>Connect a domain you own from another host to Wix</a>. There are two ways to connect your domain to Wix - via name servers or via pointing. The method you use to connect your domain determines where the DNS (Domain Name System) records of your domain are hosted.&nbsp;</li>  <li>Transfer a domain you own from another host to Wix</a>. You can&nbsp;transfer a domain&nbsp;from its current host (or 'registrar</a>') to Wix. This option lets you&nbsp;manage not only your domain and DNS records at Wix, but also your contact information and your registration payments.&nbsp;</li></ul></div></div></div></div></div>
+<button onclick="hideShow()" class="w3-btn w3-margin-bottom">Task</button>
+     
+        <div id="main" class="main">
+          4.Multimedia (Buttons and Gallery)<br>
+
+          Task 1. Open the Saved site and check the readiness of the site for publication again.<br>
+          Task 2.  The contents of all sections in the menu bar are filled make sure that the links are installed and check that the links are working.<br>
+          Task 3. Right-click in the edit window to publish the site click the Publish button in the corner.
+           
+          
+          </div>
+          <a target="_blank" href=" https://quizizz.com/join?gc=82417473" class="w3-btn w3-margin-bottom">Check yourself</a>
+        </div>
+      </div>
+
+       
+      </div>
+  </div>
+
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div> -->
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+  if(display==1)
+  {
+    div.style.display='block';
+    display=0;
+  }
+  else
+  {
+    div.style.display='none';
+    display=1;
+  }
+}
+</script>
+
+
+  </div>
+
+
+
+
+  
+  
+
+  </div>
+
+
+ 
+
+ 
+<!-- END MAIN -->
+</div>
+  </div></div></div></div></div></div></div></div>
+   
+      <style>
+        #main{
+  display: none;
+}
+
+.images{
+  width: 40%;
+  margin-top: 10px;
+  border: 4px solid #616161;
+}
+      </style>

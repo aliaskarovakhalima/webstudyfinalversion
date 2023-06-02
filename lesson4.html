@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical work. Text formatting</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+button{
+	background-color: #7f22f8;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6.2px;
+	padding-bottom: 5px;
+}
+#main{
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+		<img src="logo.png" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="student.html">Student</a></li>
+			</ul>
+		</nav>
+	</div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>HTML/CSS Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black"  href="lesson1.html">1. Ways to develop web sites. HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson2.html">2. Practical work. Development of web sites in HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson3.html">3. Text formatting (font, paragraph,lists)</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson4.html">4. Practical work. Text formatting</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson5.html">5. Tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson6.html">6. Practical work. Building tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson7.html">7. CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson8.html">8. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson9.html">9. Practical work. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson10.html">10-11. Using Scripts</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson12.html">12. Parts of the website</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson13.html">13. Header</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson14.html">14. Logo</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson15.html">15. Main Part 1</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson16.html">16. Main Part 2</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson17.html">17. Main Part 3</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="lesson18.html">18. Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson19.html">19. Website design</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="head">4. Practical work. Text formatting</h1>
+      <hr>
+      <p class="intro">HTML headings are titles or subtitles that you want to display on a webpage.</p>
+        <hr>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-white w3-padding notranslate">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            </div>
+            <a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings" target="_blank">Try it Yourself »</a>
+            </div>
+            <hr>
+    </div>
+    <div class="w3-third w3-container">
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+        <h2>HTML Headings</h2>
+        <p>HTML headings are defined with the <code class="w3-codespan">&lt;h1&gt;</code> to <code class="w3-codespan">&lt;h6&gt;</code> tags.</p>
+        <p><code class="w3-codespan">&lt;h1&gt;</code> defines the most important heading. <code class="w3-codespan">&lt;h6&gt;</code> defines the least important heading.</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Heading 1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Heading 2<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Heading 3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h4<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Heading 4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h4<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h5<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Heading 5<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h5<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h6<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Heading 6<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h6<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+            </div>	
+    </div>
+    </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+		<h2>Bigger Headings</h2>
+		<p>Each HTML heading has a default size. However, you can specify the size for any heading 
+            with the <code class="w3-codespan">style</code> attribute, using the CSS <code class="w3-codespan">font-size</code> property:</p>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> 
+                  style<span class="attributevaluecolor" style="color:mediumblue">="font-size:60px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Heading 1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                   </div>
+                <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_size" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+                </div>
+                <hr>
+                <h2>HTML Tag Reference</h2>
+                <table class="ws-table-all notranslate">
+                    <tbody><tr>
+                      <th>Tag</th>
+                      <th>Description</th>
+                    </tr>
+                    <tr>
+                      <td><a href="">&lt;html&gt;</a></td>
+                      <td>Defines the root of an HTML document</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">&lt;body&gt;</a></td>
+                      <td>Defines the document's body</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">&lt;h1&gt; to &lt;h6&gt;</a></td>
+                      <td>Defines HTML headings</td>
+                    </tr>
+                    </tbody></table>
+        <a target="_blank" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_headings1" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+        <button onclick="hideShow()">Task</button>
+        <div id="main" class="main">
+          4. Практикум. Мәтінді форматтау<br>
+1-тапсырма. Жаңа жолға көшу (абзац) тегін пайдаланып өлең жолын енгізу. <br>
+Web-сайттың бетіне кез келген өлең жолын жазыңдар. Тапсырманы орындауға арналған нұқсаулық <br>
+1. Сайттарыңның барлық файлдарын сақтайтын жеке папка құрыңдар. <br>
+2. Блокнот (Notepad) программасын іске қосыңдар (Бастау => Барлық программалар => Стандартты). <br>
+&lt;html&gt; &lt;head&gt; <br>
+&lt;title&gt; мысал &lt;/title&gt; &lt;/head&gt; <br>
+&lt;body&gt; <br>
+&lt;H1&gt; ӨЛЕҢ &lt;/H1&gt; <br>
+&lt;H2&gt; Абай &lt;/H2&gt; <br>
+&lt;P&gt; Айттым сәлем, қаламкас, &lt;BR&gt; <br>
+Саған құрбан мал мен бас. &lt;BR&gt; <br>
+Сатынганнан сені ойлап &lt;BR&gt; <br>
+Келер көзге ыстық жас. &lt;/P&gt; <br>
+&lt;P&gt; Кезімнің қарасы, &lt;BR&gt; <br>
+Көңілімнің санасы.&lt;BR&gt; <br>
+Бітпейді іштегі,&lt;BR&gt; <br>
+Ғашықтық жарасы. &lt;/P&gt; <br>
+&lt;/body&gt; <br>
+3. Файлды "Тапсырма2.html" (сақтау кезінде міндетті түрде HTML файлдың типін көрсетіңдер) деген атпен жеке бумада сақтаңдар. <br>
+4. kundelik.kz сайтына жасаған тапсырманы жүктеңдер. <br>
+
+2-тапсырма. Экрандағы мәтіннің орналасуын бақылау <br>
+Сүйікті хоббиларыңызды сипаттап жазыңдар. Нәтижесін экранға шығарып, өз қалауларыңша өзгерістер енгізіп, қайталап сақтаңдар. Өзгерістердің браузерде енгенін тексеріңдер.
+
+         </div>
+         <a target="_blank" href="https://quizizz.com/join?gc=93972827" class="w3-btn w3-margin-bottom">Check yourself</a>
+
+							</div>
+  </div>
+
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div> -->
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+	if(display==1)
+	{
+		div.style.display='block';
+		display=0;
+	}
+	else
+	{
+		div.style.display='none';
+		display=1;
+	}
+}
+</script>
+
+</body>
+</html>

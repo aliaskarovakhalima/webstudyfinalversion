@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Content</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+    <img src="logo.png" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="student.html">Student</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>WIX Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix1.html">1.SiteMap</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="wix2.html">2.1The main page of the site(Using the Editor Tools)</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="wix2.1.html">2.2The main page of the site(Header)</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="wix3.html">3.Content</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix4.html">4.1.Multimedia (Text and Image,Lines)</a>
+   <a class="w3-bar-item w3-button w3-hover-black" href="wix4.2.html">4.2.Multimedia (Buttons and Gallery)</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="footer.html">Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="wix5.html">5.Website publication</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">6.Website promotion</a>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-container" id="packages" style="margin-top:60px">
+    <h2 class="w3-xxxlarge w3-text-red"><b>Wix Editor: About Sections</b></h2>
+    <hr style="width:50px;border:3px solid red" class="w3-round">
+    <p>Sections are a quick and easy way to structure your pages. Use them to organize your site's content, and create a clear, comprehensive design. There are a variety of predesigned sections available with different layouts and elements, so you have everything you need to get started.</p>
+     <img class="image" src="img/section.png" alt="">
+    <h3 class="head">Adding a section to your site</h3>
+    <p>Add a section to your site to begin structuring your pages and their content.</p>
+<p>There are a range of pre-designed options available that include layouts and elements to help you build your site. You can also choose a blank section to build it from scratch. </p>
+    <h4 class="head">To add a section:</h4>
+    <ol>
+      <li>Click Add a Section  on the left side of the Editor.</li>
+      <li>Click a category.</li>
+      <li>Click your chosen section to add it to your page.</li>
+    </ol>
+     <img class="images" src="img/section1.png" alt="">
+
+     <h3 class="head"><b>Naming your sections</b></h3>
+     <p>Name your sections for quick and easy navigation. You can use section names to identify them in the layers panel. 
+If you choose to add a section to your menu, names are also a great way for your visitors to know what they're clicking on. </p>
+    <h3 class="head"><b>To name your section:</b></h3>
+    <ol>
+      <li>Hover over the relevant section in your Editor.</li>
+      <li>Click the More Actions icon .</li>
+      <li>Click <b>Section Settings.</b></li>
+      <li>Enter the section name into the field under What's this section's name?.</li>
+      <li>Press the Enter key on your keyboard.</li>
+    </ol>
+     <img class="images" src="img/section2.png" alt="">
+     <h3 class="head"><b>Adding sections to your menu</b></h3>
+     <p>Adding sections to your menu is a great way to help your visitors navigate your site, and direct them to the right content. </p>
+<p>Making sections a menu item is also particularly useful if you have a one-page site that contains a lot of information, as visitors will be able to find what they're looking for without having to scroll.</p>
+<h4 class="head"><b>To add a section to your menu:</b></h4>
+<ol>
+      <li>Click the menu in your Editor.</li>
+      <li>Click <b>Manage Menu.</b></li>
+      <li>Click <b>Add Menu Item / Add a menu item </b> at the bottom of the panel.</li>
+      <ol>(For advanced menus) <b>Select Section from the list</b>.</ol>
+      <ol>(For site menus) Click <b>Section or anchor</b></ol>
+      <li>Select the page the section is on from the dropdown menu.</li>
+      <li>Select the section from the dropdown menu.</li>
+      <li>Click <b>Done</b>.</li>
+
+    </ol>
+    <img class="images" src="img/section3.png" alt="">
+
+    <h3 class="head"><b>Rearranging sections on your page</b></h3>
+     <p>You can easily adjust the layout of your site page by rearranging your sections. Move sections up or down to arrange your site content, and provide an aligned, easy experience for your visitors. </p>
+     <h4 class="head"><b>To move a page section:</b></h4>
+<ol>
+      <li>Click the Zoom Out icon  on the top toolbar of the Editor.</li>
+      <li>Click the section, then click one of the arrows:</li>
+      
+      <ol><b>Move section down </b>: Move the selected section below the section underneath it.</ol>
+      <ol><b>Move section up </b>: Move the selection section above the section on top of it.</ol>
+      
+    </ol>
+    <img class="images" src="img/section4.png" alt="">
+
+
+
+    </div>
+
+
+      
+      
+
+     <button onclick="hideShow()" class="w3-btn w3-margin-bottom">Task</button>
+     
+        <div id="main" class="main">
+          3.Content <br>
+          Task 1. Add the desired section to the "About me" and "My hobbies" pages from the "Add section" menu and add information and pictures related to the topic.
+          
+          </div>
+          <a target="_blank" href="https://quizizz.com/join?gc=81452053" class="w3-btn w3-margin-bottom">Check yourself</a>
+        </div>
+      </div>
+
+       
+      </div>
+  </div>
+
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div> -->
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+  if(display==1)
+  {
+    div.style.display='block';
+    display=0;
+  }
+  else
+  {
+    div.style.display='none';
+    display=1;
+  }
+}
+</script>
+
+
+  </div>
+
+
+
+
+  
+  
+
+  </div>
+
+
+ 
+
+ 
+<!-- END MAIN -->
+</div>
+  </div>
+
+
+
+    
+  </div>
+
+
+    
+
+
+      
+
+
+
+
+  
+  
+
+  </div>
+
+
+ 
+
+ 
+<!-- END MAIN -->
+</div>
+
+
+  
+  <style>
+    .navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+
+}
+.logo{
+  width: 200px;
+  cursor: pointer;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+    margin-right: 40px;
+}
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 20px;
+}
+
+.piccont{
+    width: 70%;
+    margin-top: 50px;
+}
+.image{
+  width: 60%;
+  margin-top: 10px;
+  border: 4px solid #616161;
+}
+.images{
+  width: 40%;
+  margin-top: 10px;
+  border: 4px solid #616161;
+}
+hr{
+  color: black;
+}
+.spes_tagname {
+    color: brown;
+}
+table.w3-table-all, table.ws-table-all {
+    margin: 20px 0;
+}
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+}
+.w3-white, .w3-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important;
+}
+.ws-table-all td, .ws-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.ws-table-all tr:nth-child(odd) {
+    background-color: #fff;
+}
+.ws-table-all tr {
+    border-bottom: 1px solid #ddd;
+}
+.ws-table-all th:first-child, .ws-table-all td:first-child {
+    padding-left: 16px;
+}
+.ws-table-all tr:nth-child(even) {
+    background-color: #E7E9EB;
+}
+.w3-btn, .w3-btn:link, .w3-btn:visited {
+    color: #FFFFFF;
+    background-color: #f44336;
+    margin-top: 10px;
+}
+.w3-example .w3-btn, .w3-example .ws-btn {
+    background-color: #7f22f8!important;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 6px 18px;
+}
+p {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    font-size: 17px;
+}
+h1{
+  color: w3-light-grey;
+}
+
+.w3-example {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    margin-top: 24px;
+    margin-right: -20px;
+    margin-bottom: 24px;
+    margin-left: -20px;
+    box-shadow: none!important;
+    background-color: #E7E9EB;
+    border-radius: 5px;
+    padding: 0.01em 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+
+ #main{
+  display: none;
+}
+  </style>
+  
+
+
+    
+</body>
+</html>

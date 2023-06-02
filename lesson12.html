@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical work. Building tables</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+
+button{
+	background-color: #7f22f8;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6.2px;
+	padding-bottom: 5px;
+}
+#main{
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+		<img src="logo.png" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="student.html">Student</a></li>
+			</ul>
+		</nav>
+	</div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>HTML/CSS Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black"  href="lesson1.html">1. Ways to develop web sites. HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson2.html">2. Practical work. Development of web sites in HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson3.html">3. Text formatting (font, paragraph,lists)</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson4.html">4. Practical work. Text formatting</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson5.html">5. Tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson6.html">6. Practical work. Building tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson7.html">7. CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson8.html">8. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson9.html">9. Practical work. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson10.html">10-11. Using Scripts</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson12.html">12. Parts of the website</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson13.html">13. Header</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson14.html">14. Logo</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson15.html">15. Main Part 1</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson16.html">16. Main Part 2</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson17.html">17. Main Part 3</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="lesson18.html">18. Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson19.html">19. Website design</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="head">12. Parts of the website</h1>
+	 <hr>
+     <h2 class="intro">Essential Parts of a Website
+     </h2>
+          <hr>
+            <img src="img/webs.jpg" alt="">
+    <hr>
+    <h3>Basic parts of a website</h3>
+    <p>There are some components of websites that are so essential to web design that all sites must contain them in order to function properly. Together these parts form the backbone of your website:</p>
+    <br>
+    <h3>
+        01. Header & menu
+    </h3>               
+    <p>The header is the uppermost part of a website. It’s often the first thing that visitors see when they enter a site and almost always contains the brand’s logo as well as the website menu. This website menu is the map of the site that helps visitors find what they’re looking for, whether it’s details about your product or information about your company.</p>
+    <br>
+    <h3>02. Images</h3>
+    <p>Immediately below the header is some form of image, series of images or sometimes a video. Together, the header and main image comprise the top section of your website - often referred to as above the fold - and are essential in creating a good first impression. The featured visual, in particular, makes a marked difference in whether users stay on your website or abandon seconds after entering.</p>
+    <br>
+    <h3>03. Website content</h3>
+    <p>All sites contain content. Content typically means the words written on your site that explain what your website is about, what you have to offer and how site visitors can take advantage of your offerings. 
+    </p>
+    <p>Website content covers a wide array of things. It often refers to the paragraphs that explain your site’s mission, but it can also mean the one word that is placed on your buttons. 
+    </p>
+    <br>
+    <h3>04. Footer</h3>
+    <p>Simply put, a footer is the bottom most part of any site. It usually contains a sitemap with links to the pages available on your site. This can help visitors find all of your offerings, including those that may not have made the cut for your header. 
+    </p>
+    <hr>
+    <br>
+    <img src="img/ex1.png" alt="">
+    <hr>
+    <br>
+    <button onclick="hideShow()">Task</button>
+    <div id="main" class="main">
+      It is more convenient and clearer for users to use the site, and it is easier for the developer to write HTML code and maintain it. <br>
+      Here are the sections that can be present on a web page. <br>
+      •	Navigation — the main links to go to different web pages of the site. <br>
+      •	The "header" is the introductory upper part of the web page containing the site logo, its name, site search, navigation, etc.<br>
+      •	The main content — for informational sites is an article with the title, date of publication, author, comments to the article.<br>
+      •	A sidebar is usually a vertical block containing secondary information, such as a search form, menu, voting, advertising, etc.<br>
+      •	The "basement" is the final lower part of a web page, usually containing contact and legal information. These are phone numbers, addresses, directions, social network buttons, duplicate navigation, etc.<br>
+     <br> INSTRUCTIONS <br>
+Divide your future web-page into the following sections <br>
+It will be look like this <br>
+&lt;html&gt; <br>
+&lt;head&gt;<br>
+&lt;title&gt;Page title&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+&lt;p&gt;This is another paragraph.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;footer&gt;<br>
+&lt;/footer&gt;<br>
+&lt;/html&gt;<br>
+
+
+
+
+    </div>    
+    <a target="_blank" href="https://quizizz.com/join?gc=69867013" class="w3-btn w3-margin-bottom">Check yourself</a>
+
+        </div>
+    </div>
+
+
+
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div> -->
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+	if(display==1)
+	{
+		div.style.display='block';
+		display=0;
+	}
+	else
+	{
+		div.style.display='none';
+		display=1;
+	}
+}
+</script>
+
+</body>
+</html>

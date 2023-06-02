@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical work. Building tables</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+
+button{
+	background-color: #7f22f8;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6.2px;
+	padding-bottom: 5px;
+}
+#main{
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+		<img src="logo.png" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="student.html">Student</a></li>
+			</ul>
+		</nav>
+	</div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>HTML/CSS Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black"  href="lesson1.html">1. Ways to develop web sites. HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson2.html">2. Practical work. Development of web sites in HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson3.html">3. Text formatting (font, paragraph,lists)</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson4.html">4. Practical work. Text formatting</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson5.html">5. Tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson6.html">6. Practical work. Building tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson7.html">7. CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson8.html">8. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson9.html">9. Practical work. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson10.html">10-11. Using Scripts</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson12.html">12. Parts of the website</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson13.html">13. Header</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson14.html">14. Logo</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson15.html">15. Main Part 1</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson16.html">16. Main Part 2</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson17.html">17. Main Part 3</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="lesson18.html">18. Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson19.html">19. Website design</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="head">10-11. Using Scripts</h1>
+	 <hr>
+     <p class="intro">JavaScript makes HTML pages more dynamic and interactive.</p>
+          <hr>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-padding w3-white notranslate">
+                <h2>My First JavaScript</h2>
+                <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+                Click me to display Date and Time</button>
+                <p id="demo"></p>
+                </div>
+                <p><a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_scripts_intro" class="w3-btn">Try it Yourself »</a></p>
+                </div>
+                <hr>
+                <h2>The HTML &lt;script&gt; Tag</h2>
+                <p>The HTML <code class="w3-codespan">&lt;script&gt;</code> tag is used to define a client-side script 
+                    (JavaScript).</p>
+                    <p>The <code class="w3-codespan">&lt;script&gt;</code> element either contains script statements, or it points to an 
+                        external script file through the <code class="w3-codespan">src</code> attribute.</p>
+                        <p>Common uses for JavaScript are image manipulation, form validation, and 
+                            dynamic changes of content.</p>
+                            <p>To select an HTML element, JavaScript most often uses the 
+                                <code class="w3-codespan">document.getElementById()</code> method.</p>
+                                <p>This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+                                <div class="w3-example">
+                                    <h3>Example</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span class="jsnumbercolor" style="color:red">
+                                    </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello JavaScript!"</span>;<br>
+                                    </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+                                    <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+                                    </div>
+<br>
+    
+                    <a target="_blank" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_scripts1" class="w3-btn w3-margin-bottom" download>Exercise</a>
+                    <button onclick="hideShow()">Task</button>
+                    <div id="main" class="main">
+                      10-11. Use scripts <br>
+Task 1. <br>
+Create a message on a free topic. The data on the Web page must meet the following requirements: <br>
+1.Use Word Processing tags to align the title in the center of the document, and the text in width. <br>
+2.tab your images on the Web page and let the image be located under the text. <br>
+3.add JavaScript to your messages. <br>
+<br>
+Task 2. <br>
+Place the script "calculate Square area" on the Web page by entering the code below. <br>
+<img src="img/sc1.png" alt=""> <br>
+Task 3. <br>
+OnClick attribute show today, month, year, and current time when a button is pressed in the browser.<br>
+Task 4. <br>
+"Your browser accepts JavaSeript!!!!!!! display a script with the message "" on the screen.<br>
+Task 5. <br>
+Write a program that calculates the sum of numbers from 5 to 13.<br>
+Task 6.<br>
+Write this software code and calculate the result.<br>
+<img src="img/sc2.png" alt="">
+                
+                
+                
+                
+                    </div>  
+         <a target="_blank" href="https://quizizz.com/join?gc=69625658" class="w3-btn w3-margin-bottom">Check yourself</a>
+
+        </div>
+    </div>
+
+
+
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div> -->
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+	if(display==1)
+	{
+		div.style.display='block';
+		display=0;
+	}
+	else
+	{
+		div.style.display='none';
+		display=1;
+	}
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical work. Building tables</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+.header{
+    width: 50%;
+}
+
+button{
+	background-color: #7f22f8;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6.2px;
+	padding-bottom: 5px;
+}
+#main{
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+		<img src="logo.png" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="student.html">Student</a></li>
+			</ul>
+		</nav>
+	</div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>HTML/CSS Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black"  href="lesson1.html">1. Ways to develop web sites. HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson2.html">2. Practical work. Development of web sites in HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson3.html">3. Text formatting (font, paragraph,lists)</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson4.html">4. Practical work. Text formatting</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson5.html">5. Tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson6.html">6. Practical work. Building tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson7.html">7. CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson8.html">8. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson9.html">9. Practical work. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson10.html">10-11. Using Scripts</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson12.html">12. Parts of the website</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson13.html">13. Header</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson14.html">14. Logo</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson15.html">15. Main Part 1</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson16.html">16. Main Part 2</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson17.html">17. Main Part 3</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="lesson18.html">18. Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson19.html">19. Website design</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="head">15. Main Part 1</h1>
+	 <hr>
+     <div class="w3-example">
+        <h3>Example</h3>
+          <p>Specify the main content of the document:</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>main<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Most Popular Browsers<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Chrome, Firefox, and 
+            Edge are the most used browsers today.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>&nbsp;
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Google Chrome<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Google Chrome is a web browser 
+          developed by Google, released in 2008. Chrome is the world's most popular web 
+          browser today!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Mozilla 
+          Firefox<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Mozilla Firefox is an open-source web browser developed by 
+          Mozilla. Firefox has been the second most popular web browser since January, 
+          2018.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Microsoft Edge<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+          &nbsp;&nbsp;&nbsp;
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Microsoft Edge is a web browser developed by Microsoft, released in 2015. 
+          Microsoft Edge replaced Internet Explorer.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/main<span class="tagcolor" style="color:mediumblue">&gt;</span></span>  </div>
+        <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_main" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+        </div>
+        <hr>
+        <h2>Definition and Usage</h2>
+        <p>The <code class="w3-codespan">&lt;main&gt;</code> tag specifies the main content of a document.</p>
+        <p>The content inside the <code class="w3-codespan">&lt;main&gt;</code> element should be unique to the document. 
+            It should not contain any content that is repeated across documents such as 
+            sidebars, navigation links, copyright information, site logos, and search forms.</p>
+            <button onclick="hideShow()">Task</button>
+            <div id="main" class="main">
+              Main Part <br>
+              1.	To create a home page, run the following HTML code after the navbar element. Now we will create a home section. Example: <br>
+              &lt;!-- home section --&gt; <br>
+              
+              &lt;section class="home-section active"&gt; <br>
+              &lt;h1 class="hero-heading">hello, i am &lt;br&gt; kunaal&lt;/h1&gt; <br>
+              &lt;img src="img/home.png" class="home-img" alt=""&gt; <br>
+              &lt;/section&gt; <br>
+              
+              2.	Use tag &lt;img&gt; to past your photo for portfolio.  <br>
+              3.	Also use tag &lt;h1&gt; for heading. <br>
+              4.	Create a CSS for styling web-page <br>
+              5.	Under.home-section has the position: relative and top properties:0. They are important when navigating. <br>
+              6.	We set a fixed value (position: fixed) to all sections (home, project, about, contact). Thanks to this, they will be on top of each other. <br>
+              7.	To designate an active partition, we use the active class with the following properties position: relative and opacity: 1. <br>
+              
+              Example: <br>
+              <img src="img/main1.jpg" alt="">
+   
+            </div>
+        <a target="_blank" href="https://quizizz.com/join?gc=71797853" class="w3-btn w3-margin-bottom">Check yourself</a>
+
+                                
+        </div>
+    </div>
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+	if(display==1)
+	{
+		div.style.display='block';
+		display=0;
+	}
+	else
+	{
+		div.style.display='none';
+		display=1;
+	}
+}
+</script>
+
+</body>
+</html>

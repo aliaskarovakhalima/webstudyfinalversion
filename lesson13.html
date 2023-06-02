@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical work. Building tables</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+.header{
+    width: 100%;
+}
+button{
+	background-color: #7f22f8;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6.2px;
+	padding-bottom: 5px;
+}
+#main{
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+		<img src="logo.png" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="student.html">Student</a></li>
+			</ul>
+		</nav>
+	</div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>HTML/CSS Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black"  href="lesson1.html">1. Ways to develop web sites. HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson2.html">2. Practical work. Development of web sites in HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson3.html">3. Text formatting (font, paragraph,lists)</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson4.html">4. Practical work. Text formatting</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson5.html">5. Tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson6.html">6. Practical work. Building tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson7.html">7. CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson8.html">8. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson9.html">9. Practical work. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson10.html">10-11. Using Scripts</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson12.html">12. Parts of the website</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson13.html">13. Header</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson14.html">14. Logo</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson15.html">15. Main Part 1</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson16.html">16. Main Part 2</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson17.html">17. Main Part 3</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="lesson18.html">18. Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson19.html">19. Website design</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="head">13. Header</h1>
+	 <hr>
+     <h2 class="intro">Essential Parts of a Website
+     </h2>
+          <hr>
+          <p class="intro">Learn how to create a responsive header with CSS.</p>
+          <hr>
+          <h2>Responsive Header</h2>
+          <p>Change the design of the header depending on the screen size. Resize the browser window to see the effect.</p>
+          <div class="header">
+           <img src="img/headerhtml.png" alt="" class="header">
+          </div>
+          <p><a target="_blank" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header" class="w3-btn">Try it Yourself »</a></p>
+          <hr style="clear:both;">
+          <h2>Create A Responsive Header</h2>
+          <h5>Step 1) Add HTML:</h5>     
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate htmlHigh">
+              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="header"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#default"</span> class<span class="attributevaluecolor" style="color:mediumblue">="logo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>CompanyLogo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="header-right"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="active"</span> href<span class="attributevaluecolor" style="color:mediumblue">="#home"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Home<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#contact"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Contact<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#about"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>About<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            </div>
+            <hr>
+            <h5>Step 2) Add CSS:</h5>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  <span class="commentcolor" style="color:green">/* Style the header with a grey background and some padding */</span><br>.header <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
+                  overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hidden<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #f1f1f1<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px 
+                  10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Style the header links */</span><br>.header a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+                  left<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+                  12px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 18px<span class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp; 
+                  line-height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border-radius<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 4px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Style the logo 
+                  link (notice that we set the same value of line-height and font-size to 
+                  prevent the header to increase when the font gets bigger */</span><br>
+                  .header a.logo 
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-weight<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> bold<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* 
+                  Change the background color on mouse-over */</span><br>.header a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
+                  background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #ddd<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> black<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Style the 
+                  active/current link*/</span><br>.header a.active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
+                  background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dodgerblue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Float the 
+                  link section to the right */</span><br>.header-right <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
+                  float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Add media queries for responsiveness - when the 
+                  screen is 500px wide or less, stack the links on top of each other */</span> <br>
+                  @media screen and (max-width: 500px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp; 
+                  .header a <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+                  block<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> left<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br>&nbsp; 
+                  .header-right <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br> </span></div>
+                <a target="_blank" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+                </div>   
+                <button onclick="hideShow()">Task</button>
+                <div id="main" class="main">
+                  The site header is the section from which the site begins, as a rule, it contains the logo, the name of the site, the site search form, etc. <br>
+                  1)	Head Section Details: <br>
+                  a.	This will be an HTML5 document, so give it the appropriate doctype and character set. <br>
+                  b.	This website contains one page: <br>
+                  i.	index.html <br>
+                  c.	Give the following title <br>
+                  i.	Main Page <br>
+                  2)	Create menu for your future portfolio. First of all, you need to create an Unordered list with list items that you will have in your menu. <br>
+                  Your menu will include next topics: <br>
+                  a. About me (submenu: my family, my hobbies); <br>
+                  b. My school <br>
+                  c. My researches <br>
+                  Also on your menu there will be your future logo which we made on the next lesson. <br>
+                  
+                  </div>
+          <a target="_blank" href="https://quizizz.com/join?gc=71315143" class="w3-btn w3-margin-bottom">Check yourself</a>
+
+                                
+        </div>
+    </div>
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+	if(display==1)
+	{
+		div.style.display='block';
+		display=0;
+	}
+	else
+	{
+		div.style.display='none';
+		display=1;
+	}
+}
+</script>
+
+</body>
+</html>

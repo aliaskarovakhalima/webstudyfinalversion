@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Text formatting (font, paragraph,lists)</title>
+<meta charset="UTF-8">
+<link href="img/log.png" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lesson1.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 67px;
+  bottom: 0;
+  height: inherit;
+}
+button{
+	background-color: #7f22f8;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6.2px;
+	padding-bottom: 5px;
+}
+#main{
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <div class="navbar">
+		<img src="logo.png" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="student.html">Student</a></li>
+			</ul>
+		</nav>
+	</div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>HTML/CSS Content</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black"  href="lesson1.html">1. Ways to develop web sites. HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson2.html">2. Practical work. Development of web sites in HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson3.html">3. Text formatting (font, paragraph,lists)</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson4.html">4. Practical work. Text formatting</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson5.html">5. Tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson6.html">6. Practical work. Building tables</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson7.html">7. CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson8.html">8. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson9.html">9. Practical work. Introduction of multimedia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson10.html">10-11. Using Scripts</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson12.html">12. Parts of the website</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson13.html">13. Header</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson14.html">14. Logo</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson15.html">15. Main Part 1</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson16.html">16. Main Part 2</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson17.html">17. Main Part 3</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="lesson18.html">18. Footer</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="lesson19.html">19. Website design</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="head">3. Text formatting (font, paragraph,lists)</h1>
+      <hr>
+      <p class="intro">HTML contains several elements for defining text with a special meaning.</p>
+        <hr>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-white w3-padding notranslate">
+            <p><b>This text is bold</b></p>
+            <p><i>This text is italic</i></p>
+            <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+            </div>
+            <a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro" target="_blank">Try it Yourself »</a>
+            </div>
+            <hr>
+    </div>
+    <div class="w3-third w3-container">
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+        <h2>HTML Formatting Elements</h2>
+        <p>Formatting elements were designed to display special types of text:</p>
+        <ul>
+            <li><code class="w3-codespan">&lt;b&gt;</code> - Bold text</li>
+            <li><code class="w3-codespan">&lt;strong&gt;</code> - Important text</li>
+            <li><code class="w3-codespan">&lt;i&gt;</code> - Italic text</li>
+            <li><code class="w3-codespan">&lt;em&gt;</code> - Emphasized text</li>
+            <li><code class="w3-codespan">&lt;mark&gt;</code> - Marked text</li>
+            <li><code class="w3-codespan">&lt;small&gt;</code> - Smaller text</li>
+            <li><code class="w3-codespan">&lt;del&gt;</code> - Deleted text</li>
+            <li><code class="w3-codespan">&lt;ins&gt;</code> - Inserted text</li>
+            <li><code class="w3-codespan">&lt;sub&gt;</code> - Subscript text</li>
+            <li><code class="w3-codespan">&lt;sup&gt;</code> - Superscript text</li>
+           </ul>
+		</div>
+    </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+		<h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
+		<p>The HTML <code class="w3-codespan">&lt;b&gt;</code> element defines bold text, 
+            without any extra importance.</p>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text is bold<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_formatting_b" target="_blank">Try it Yourself »</a>
+                </div>
+                <hr>
+                <p>The HTML <code class="w3-codespan">&lt;strong&gt;</code> element defines text 
+                    with strong importance. The content inside is typically displayed in bold.</p>
+            <div class="w3-example">
+                <h3>Example</h3>
+                 <div class="w3-code notranslate htmlHigh">
+                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>strong<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text is 
+                     important!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/strong<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+                </div>
+                <hr>
+                <h2>HTML Text Formatting Elements</h2>
+                <table class="ws-table-all notranslate">
+                    <tbody><tr>
+                    <th style="width:20%">Tag</th>
+                    <th>Description</th>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;b&gt;</a></td>
+                    <td>Defines bold text</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;em&gt;</a></td>
+                    <td>Defines emphasized text&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;i&gt;</a></td>
+                    <td>Defines a part of text in an alternate voice or mood</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;small&gt;</a></td>
+                    <td>Defines smaller text</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;strong&gt;</a></td>
+                    <td>Defines important text</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;sub&gt;</a></td>
+                    <td>Defines subscripted text</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;sup&gt;</a></td>
+                    <td>Defines superscripted text</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;ins&gt;</a></td>
+                    <td>Defines inserted text</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;del&gt;</a></td>
+                    <td>Defines deleted text</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">&lt;mark&gt;</a></td>
+                    <td>Defines marked/highlighted text</td>
+                    </tr>
+                    </tbody></table>
+        <a target="_blank" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_formatting1" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+        <button onclick="hideShow()">Task</button>
+        <div id="main" class="main">
+          3.Мәтінді форматтау (қаріп, абзац, тізімдер) <br>
+          Блокнот мәтіндік редакторын ашып, бос құжатты Тапсырма2.html деген атпен сақтаңдар.<br>
+          1. Құжаттағы алғашқы тег &lt;HTML&gt; тегі болу керек. Терезенің тақырыбын енгізу үшін мына жолдарды теріңдер:<br>
+          &lt;HEAD&gt; &lt;TITLE&gt; Менің бірінші бетім &lt;/TITLE&gt; <br>
+          &lt;/HEAD&gt; <br>
+          2. Енді құжаттың денесін, яғни HTML құжатта не көрсетілетінін енгіземіз. Ол үшін мына жолдарды теріңдер: <br>
+          &lt;BODY BGCOLOR = yellow TEXT = blue&gt; <br>
+          Мұндағы BGCOLOR = yellow құжаттың фоны - сары, ал TEXT = blue шығатын мәтіннің түсі көк болатынын анықтайды. <br>
+          3. Енді нөмірленген және нөмірленбеген тізім жасауды үйренейік. Ол үшін мына жолдарды енгізіңдер: <br>
+          &lt;O&lt;UL&gt; Бұл бірінші нөмірленген тізімді білдіреді.<br>
+          &lt;LI&gt; оқушы<br>
+          &lt;LI&gt; мұғалім &lt;/LI&gt; <br>
+          &lt;/0&lt;UL&gt; <br>
+          &lt;UL = DISC&gt; Бұл нөмірленбеген тізбекті білдіреді.<br>
+          &lt;LI&gt; Бірінші оқушы<br>
+          &lt;LI&gt; Екінші оқушы<br>
+          &lt;LI&gt; Үшінші оқушы<br>
+            &lt;/U&lt;UL&gt; <br>
+          4. Келесі жолға &lt;BR&gt; &lt;BR&gt; деп, теріңдер. Бұл екі рет бос жол жасағанды білдіреді («Enter» пернесін басқанды білдіреді). <br>
+          5. Келесі жолға теріңдер: &lt;MARQUEE&gt; СЫРҒЫМАЛЫ ЖОЛ &lt;/MARQUEE&gt;. Нәтижесінде сырғымалы жол жасалынады. <br>
+          6. HTML құжатта көрсетілетін ақпарат таусылғандықтан &lt;BODY&gt; тегін жабу керек, ол үшін &lt;/BODY&gt; деп жазыңдар. HTML құжаттағы жазу аяқталды, сондықтан &lt;HTML&gt; тегін де жабу керек, ол үшін &lt;/HTML&gt; деп жазыңдар. <br>
+          Блокнотты жауып, жасаған құжатты браузерде көріңдер. <br>
+          7. kundelik.kz сайтына жасаған жұмытарынды жүктеңдер<br>
+          
+          </div>
+          <a target="_blank" href="https://quizizz.com/join?gc=93248762" class="w3-btn w3-margin-bottom">Check yourself</a>
+
+							</div>
+  </div>
+
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div> -->
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+var div=document.getElementById('main');
+var display=0;
+
+function hideShow(){
+	if(display==1)
+	{
+		div.style.display='block';
+		display=0;
+	}
+	else
+	{
+		div.style.display='none';
+		display=1;
+	}
+}
+</script>
+
+</body>
+</html>
