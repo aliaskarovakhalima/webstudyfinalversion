@@ -1,0 +1,129 @@
+
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+
+}
+.logo{
+	width: 200px;
+	cursor: pointer;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 40px;
+    margin-right: 40px;
+}
+nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-size: 20px;
+}
+
+.piccont{
+    width: 50%;
+    margin-top: 50px;
+}
+.spes_tagname {
+    color: brown;
+}
+table.w3-table-all, table.ws-table-all {
+    margin: 20px 0;
+}
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+}
+.w3-white, .w3-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important;
+}
+.ws-table-all td, .ws-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.ws-table-all tr:nth-child(odd) {
+    background-color: #fff;
+}
+.ws-table-all tr {
+    border-bottom: 1px solid #ddd;
+}
+.ws-table-all th:first-child, .ws-table-all td:first-child {
+    padding-left: 16px;
+}
+.ws-table-all tr:nth-child(even) {
+    background-color: #E7E9EB;
+}
+.w3-btn, .w3-btn:link, .w3-btn:visited {
+    color: #FFFFFF;
+    background-color: #7f22f8;
+    margin-top: 10px;
+}
+.w3-example .w3-btn, .w3-example .ws-btn {
+    background-color: #7f22f8!important;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 6px 18px;
+}
+p {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    font-size: 17px;
+}
+.w3-example {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    margin-top: 24px;
+    margin-right: -20px;
+    margin-bottom: 24px;
+    margin-left: -20px;
+    box-shadow: none!important;
+    background-color: #E7E9EB;
+    border-radius: 5px;
+    padding: 0.01em 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+h4.w3-bar-item{
+    color: #7f22f8;
+}
+.w3-note, .w3-warning {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding: 16px 32px;
+    background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+}
+.table1, .table1 th, .table1 td {
+    border: 1px solid #282A35;
+}
+.frog{
+    width: 800px;
+    height: 500px;
+}
