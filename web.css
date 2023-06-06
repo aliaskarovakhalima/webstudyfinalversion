@@ -193,3 +193,6 @@ h3{
 .card:hover{
 	box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
 }
+.container{
+	text-align: center;
+}
