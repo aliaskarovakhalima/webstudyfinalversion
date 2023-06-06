@@ -119,7 +119,7 @@ nav ul li a{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-left: 80px;
+	padding-left: 160px;
 }
 .row{
 	margin: 10px 0;
